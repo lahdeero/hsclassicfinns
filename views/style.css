@@ -1,0 +1,15 @@
+body{
+  padding: 1rem;
+}
+
+h1{
+  text-align:center;
+}
+
+.container{
+  margin-top: 2rem;
+}
+
+.ranks-table{
+  border: 1px solid black;
+}
