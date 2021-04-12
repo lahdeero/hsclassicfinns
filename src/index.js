@@ -1,7 +1,7 @@
 import axios from "axios"
 import express from "express"
 const app = express()
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.get('/', async (req, res) => {
   const rank_list = await fetch();
@@ -22,11 +22,14 @@ const printTopList = (rank_list) => {
 
 const fetch = async () => {
   const rank_list = []
-  const players = ["Roarr", "Kufdon", "Alpha", "Sopamaa", "Threat"]
+  const players = ["Kufdon", "DHawk", "Merza", "Alpha", "Sopamaa", "Agathanos", 
+  "Vardu", "Zumpp", "kane8D", "Roarr", "Snurmi", 
+  "Habugabu", "Troni", "Pietzu10", "Makkis", "Harzz", 
+  "Tume", "Drafkunex", "monki3", "majis1", "Threat"].join("|").toLowerCase().split("|")
   const response = await axios.get("https://playhearthstone.com/en-gb/api/community/leaderboardsData?region=EU&leaderboardId=CLS")
   const rows = response.data.leaderboard.rows;
   rows.forEach((e) => {
-    if (players.includes(e.accountid)) {
+    if (players.includes(e.accountid.toLowerCase())) {
       rank_list.push(e)
     }
   })
