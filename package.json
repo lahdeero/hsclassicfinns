@@ -1,0 +1,22 @@
+{
+  "name": "hsranks",
+  "version": "0.1.0",
+  "description": "HS classic top finnish players",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hs",
+    "classic",
+    "ranks"
+  ],
+  "author": "lahdeero",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}
