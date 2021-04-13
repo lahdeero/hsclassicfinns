@@ -4,16 +4,20 @@ html
       include style.css
     body
       div
-        h1 suomi toplista
+        h1 Suomi toplista
       div(class="container")
         center
           table(class="ranks-table")
             thead
                 tr
-                  th Account Id
+                  th HS Nickname 
                   th Rank
             tbody
               each player in rank_list
                   tr
                     td #{player.accountid}
                     td #{player.rank}
+        p Näyttää vain hearthstone classic top 200 pelaajat 
+        p 
+        | Jos olet suomalainen top 200 pelaaja ja nimesi puuttu listasta spammaa Roarrin 
+        a(href='https://discord.gg/cxJmcSD') discordiin
