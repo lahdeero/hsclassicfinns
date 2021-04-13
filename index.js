@@ -12,9 +12,9 @@ app.get('/', async (req, res) => {
 const fetch = async () => {
   const rank_list = []
   const players = ["Kufdon", "DHawk", "Merza", "Alpha", "Sopamaa", "Agathanos", 
-  "Vardu", "Zumpp", "kane8D", "Roarr", "Snurmi", 
-  "Habugabu", "Troni", "Pietzu10", "Makkis", "Harzz", 
-  "Tume", "Drafkunex", "monki3", "majis1", "Threat"].join("|").toLowerCase().split("|")
+  "Vardu", "Zumpp", "kane8D", "Roarr", "Snurmi", "Habugabu", "Troni", "Pietzu10", 
+  "Makkis", "Harzz", "Tume", "Drafkunex", "monki3", "majis1", "Threat", "Cpra", 
+  "Bezikki", "FR33V", "Sepelaaja", "Wampie"].join("|").toLowerCase().split("|")
   const response = await axios.get("https://playhearthstone.com/en-gb/api/community/leaderboardsData?region=EU&leaderboardId=CLS")
   const rows = response.data.leaderboard.rows;
   rows.forEach((e) => {
