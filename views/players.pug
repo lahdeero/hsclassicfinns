@@ -1,0 +1,16 @@
+//- players.pug
+extends layout.pug
+
+block content
+  div
+    h1 Pelajaat
+  div(class="container")
+    center
+      table(class="ranks-table")
+        thead
+            tr
+              th HS Nickname 
+        tbody
+          each player in players
+              tr
+                td #{player}

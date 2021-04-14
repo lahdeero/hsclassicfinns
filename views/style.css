@@ -1,15 +1,60 @@
 body{
-  padding: 1rem;
+  padding: 1em;
+}
+
+#header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #efd8af;
+  color: white;
+  text-align: center;
 }
 
 h1{
   text-align:center;
 }
 
+.link{
+  margin-right: 2rem;
+}
+
 .container{
   margin-top: 2rem;
 }
 
-.ranks-table{
-  border: 1px solid black;
+table {
+  border: .1em solid black;
+  margin: 2rem;
+}
+
+th, td {
+  width: 15em;
+}
+
+tr:nth-child(even){
+  background: #f0ebe9;
+}
+
+.ranks tr:first-child{
+  background: gold;
+}
+
+.ranks tr:nth-child(2) {
+  background: silver;
+}
+
+.ranks tr:nth-child(3) {
+  background: orange;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #efd8af;
+  color: white;
+  text-align: center;
 }
