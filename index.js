@@ -1,12 +1,8 @@
 import axios from "axios"
 import express from "express"
+import {players} from "./service/players.js"
 const app = express()
 const port = process.env.PORT || 3000;
-
-const players = ["Kufdon", "DHawk", "Merza", "Alpha", "Sopamaa", "Agathanos", 
-"Vardu", "Zumpp", "kane8D", "Roarr", "Snurmi", "Habugabu", "Troni", "Pietzu10", 
-"Makkis", "Harzz", "Tume", "Drafkunex", "monki3", "majis1", "Threat", "Cpra", 
-"Bezikki", "FR33V", "Sepelaaja", "Wampie", "m4k3z", "Iksu"].join("|").toLowerCase().split("|")
 
 app.get('/', async (_req, res) => {
   const rank_list = await fetch();
